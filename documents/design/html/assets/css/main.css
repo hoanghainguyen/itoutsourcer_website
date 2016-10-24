@@ -1,0 +1,871 @@
+@charset "utf-8";
+@import url(font-awesome.min.css);
+body
+{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    color: #000;
+    font-family: Calibri;
+    -webkit-font-smoothing: antialiased !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    line-height: 1em;
+}
+p{
+    line-height: 1em;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-bottom:0px;
+    margin-top: 0px;
+}
+
+/*--header--*/
+.navbar-inverse {
+    background-color: #fff;
+    -webkit-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.43);
+    -moz-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.43);
+    box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.43);
+    border-color: #ffffff;
+    height: 80px;
+}
+.navbar-brand {
+    float: left;
+    font-size: 18px;
+    height: 50px;
+    line-height: 20px;
+    padding-top: 10px;
+}
+
+.navbar-nav > li {
+    float: left;
+    padding: 0px 20px;
+}
+.navbar-nav > li > a {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #000;
+}
+
+
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+    background-color:rgba(60, 185, 207, 0.5);
+    color: #000;
+
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #000
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus{
+    color: #9d9d9d;
+}
+
+/*--- hero banner--*/
+/*
+#hero-banner{
+    background: transparent url(../../images/banner.png);
+    position: absolute;
+    background-position: top center, center center, center bottom;
+    background: cover;
+    height:528px;
+    left: 0;
+    right: 0;
+    top: 80px;
+    z-index: 1;
+}*/
+#hero-banner{
+    background: transparent url(../../images/banner.png);
+    background-position: top center, center center, center bottom;
+    margin-top: 80px;
+    height: 524px;
+}
+
+#hero-banner .content {
+    width: 672px;
+    margin-left: 220px;
+    padding-top: 65px;
+}
+
+#hero-banner .content h1{
+    font-size: 4.6em;
+    font-weight: bold;
+    color: #000000;
+    padding-left: 260px;
+}
+
+#hero-banner .content p {
+    font-size: 2em;
+    word-wrap: normal;
+    text-align: justify;
+    background-color:rgba(250, 250, 250, 0.5);
+    padding: 40px 40px;
+    margin-top: 20px;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #3cb9cf;
+    background-color: #3cb9cf;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus  {
+    border-color: #333;
+    background-color: #333;
+}
+
+.navbar-toggle{
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    float: right;
+    margin-bottom: 8px;
+    margin-right: 15px;
+    margin-top: 20px;
+    padding: 9px 10px;
+    position: relative;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border: none;
+    border-color: #101010;
+}
+
+/*----- Service*---*/
+#myAboutus{
+    padding: 30px 0;
+    background-color: #3cb9cf;
+}
+
+#myAboutus h2{
+    font-size: 3.4 em;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+}
+.service-detail{
+    margin-top: 40px;
+ }
+
+ul.icons-group{
+    list-style: none;
+    margin: auto 0;
+    padding: 0 0 50px 0;
+}
+
+ul.icons-group li{
+    display: inline-block;
+}
+
+ul.icons-group li .icon img{
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff;
+    padding: 18px;
+}
+.text-content{
+    font-size: 2.4em;
+    line-height: 1.2em;
+    color: #ffffff;
+    padding-left: 20px;
+    width: 260px;
+    vertical-align: middle;
+    text-align: left;
+}
+#myAboutus p{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 2.3em;
+    font-weight: bold;
+    margin-top: 40px;
+}
+/*--ABOUT US--*/
+#myClient{
+     padding: 50px 0;
+}
+
+#myClient h2{
+    font-size: 2.8em;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#myClient p{
+    text-align: justify;
+    font-size: 2em;
+
+}
+.about-detail{
+    margin-top: 20px;
+}
+.about-detail img{
+    vertical-align: bottom;
+    margin-top: 28px;
+    margin-bottom: 30px;
+}
+.text-group{
+    font-size: 2em;
+    margin: 0;
+    padding: 10px 20px;
+    line-height: 1.2em;
+
+}
+.text-group li{
+    margin-bottom: 10px;
+}
+
+/*---Technologies---*/
+#technologies{
+    background: url("../../images/background.png") top center;
+    background-position: top center, center center, center bottom;
+    background: cover cover;
+    background-attachment: fixed;
+    padding: 40px 0px;
+}
+
+#technologies h2{
+    font-size: 3.4em;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+
+}
+
+#technologies h3{
+    font-size: 2.8em;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#technologies h3.yellow-background{
+    background-color: #f9a107;
+    padding: 10px 0px ;
+    color: #000000;
+}
+#technologies h3.yellow-background a{
+    text-decoration: underline;
+    color: #000000;
+    font-style: italic;
+}
+
+.technologies-group{
+    font-size: 0;
+    line-height: 0;
+    margin-left: -2% !important;
+    margin-top: 80px;
+}
+.technologies-group .technologies-item {
+    display: inline-block;
+    font-size: 13px;
+    margin-bottom: 30px;
+    margin-left: 55px;
+    vertical-align: top;
+    width: 15%;
+    text-align: center;
+}
+.technologies-group .technologies-progress{
+    height: 200px;
+    width: 200px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    margin-bottom: 18px;
+    position: relative;
+    margin: 0 auto;
+}
+.technologies-group .technologies-item .money-item,.technologies-group .technologies-item .check-item,
+.technologies-group .technologies-item .ruler-icons,.technologies-group .technologies-item .computer-icon,.technologies-group .technologies-item .brain-icon{
+    padding-top: 45px;
+ }
+
+.technologies-group .technologies-content p{
+    margin-top: 30px;
+}
+
+.technologies-content{
+    position: relative;
+    font-size: 1em;
+    text-align: center;
+    top: 0;
+    transition: all 0.8s ease 0s;
+    visibility: visible;
+    color: #000;
+    padding-left: 20px;
+}
+
+.technologies-group  .technologies-content .excerpt {
+    margin-bottom: 0;
+}
+
+#technologies p{
+    font-size: 2em;
+    color: #ffffff;
+}
+.text-app {
+    padding-bottom: 70px;
+    padding-top: 40px;
+}
+
+.text-app a.design-text,.text-app a.app-text{
+    color: #000;
+    font-size: 2.4em;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+/*---------------Services----------*/
+#myServices{
+    padding: 70px 0px;
+    background: url("../../images/background-1.png") top center;
+    background-position: top center, center center, center bottom;
+    background: cover cover;
+    height: 786px;
+    border-bottom: 1px solid #dddddd;
+    box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.43);
+}
+
+#myServices h2{
+    font-size: 3.4em;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.website-creation h4{
+    font-size: 2.4em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.website-creation p{
+    font-size: 2.4em;
+    margin-bottom: 40px;
+}
+
+.icon-technologies-red {
+    width: 172px;
+    height: 172px;
+    padding: 40px 45px;
+    border-radius: 100%;
+    background-color: #e74c3c;
+    display: block;
+    margin: 0 auto;
+
+}
+.icon-technologies-green {
+    width: 172px;
+    height: 172px;
+    padding: 40px 45px;
+    border-radius: 100%;
+    background-color: #2ecc71;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.myservice-item{
+    margin-top: 100px;
+    text-align: center;
+}
+
+/*-----Reference---*/
+#references{
+    padding: 70px 0px;
+}
+
+#references h2{
+    font-size: 3.4em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+#references p{
+    font-size: 2.2em;
+    text-align: center;
+    margin-top: 60px;
+}
+
+ul.client-items{
+    list-style: none;
+}
+
+ul.client-items li{
+    display: inline-flex;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+footer{
+    padding: 40px 0px;
+    background-color: #d0ebfb;
+}
+.contact-Info h5, .connect-with-us h5{
+    font-size: 2.3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+}
+.contact-Info address{
+    font-size: 2em;
+}
+
+ul.social-items{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul.social-items li{
+    font-size: 2em;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+ul.social-items li img{
+    padding-right: 10px;
+}
+
+@media only screen and (max-width : 992px){
+    #myServices {
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-color: rgba(0, 0, 0, 0);
+        background-image: url("../../images/background-1.png");
+        background-origin: padding-box;
+        background-position: center top, center center, center bottom;
+        background-repeat: repeat;
+        background-size: auto auto;
+        border-bottom: 1px solid #dddddd;
+        box-shadow: -1px 2px 5px 0 rgba(0, 0, 0, 0.43);
+        height: 920px;
+        padding: 70px 0;
+    }
+
+    .container {
+        width: 95%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .col-sm-offset-3 {
+        margin-left: 30%;
+    }
+    .col-sm-3 {
+        width: 30%;
+    }
+
+    #hero-banner .content {
+        margin-left: 50px;
+        padding-top: 65px;
+        width: 672px;
+    }
+    #hero-banner .content h1 {
+        color: #000000;
+        font-size: 4.6em;
+        font-weight: bold;
+        padding-left: 100px;
+    }
+    .text-content {
+        color: #ffffff;
+        font-size: 2.4em;
+        line-height: 1.2em;
+        padding-left: 20px;
+        text-align: left;
+        vertical-align: middle;
+        width: 400px;
+    }
+    .text-app a.design-text, .text-app a.app-text {
+        color: #000;
+        font-size: 2.4em;
+        text-align: center;
+        text-decoration: underline;
+    }
+    #technologies p {
+        color: #ffffff;
+        font-size: 1.8em;
+    }
+
+    .technologies-group .technologies-item {
+        display: inline-block;
+        font-size: 13px;
+        margin-bottom: 30px;
+        margin-left: 50px;
+        text-align: center;
+        vertical-align: top;
+        width: 20%;
+    }
+
+    .technologies-group .technologies-progress {
+        background-color: #ffffff;
+        border-radius: 100%;
+        height: 150px;
+        margin: 0 auto;
+        position: relative;
+        width: 150px;
+    }
+    .technologies-group .technologies-item .money-item,.technologies-group .technologies-item .check-item, .technologies-group .technologies-item .ruler-icons,.technologies-group .technologies-item .computer-icon {
+        padding-top: 35px;
+    }
+
+    .technologies-group .technologies-item .brain-icon {
+        padding-top: 25px;
+    }
+    .technologies-group .technologies-item .money-item img, .technologies-group .technologies-item .check-item img, .technologies-group .technologies-item .ruler-icons img, .technologies-group .technologies-item .computer-icon img, .technologies-group .technologies-item .brain-icon img {
+        width: 60px;
+    }
+
+}
+
+
+@media only screen and (max-width : 800px) {
+    .container {
+        width: 90%;
+    }
+
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-toggle {
+        margin-right: 0px;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        background-color: #ffffff;
+        box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.43);
+        border: 1px solid #9d9d9d;
+        float: none!important;
+        margin: 0px;
+    }
+
+
+    .navbar-nav > li {
+        float: none;
+        padding: 0px;
+        display: block;
+        border-bottom: 1px solid #dddddd;
+        background-color: #ffffff;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+
+    .navbar-nav{
+        margin-top: 20px;
+    }
+
+
+    .technologies-group {
+        font-size: 0;
+        line-height: 0;
+        margin-left: -4% !important;
+        margin-top: 80px;
+    }
+
+    .text-content {
+        color: #ffffff;
+        font-size: 2.4em;
+        line-height: 1.2em;
+        padding-left: 20px;
+        text-align: left;
+        vertical-align: middle;
+        width: 400px;
+    }
+
+    #hero-banner .content h1{
+        font-size: 4em;
+        font-weight: bold;
+        color: #000000;
+        padding-left:40px;
+        padding-top: 20px;
+    }
+
+    #hero-banner .content {
+         margin: auto;
+         padding-top: 65px;
+         width: 672px;
+     }
+    .container{
+        width: 95%;
+    }
+
+    .text-app{
+        line-height: 3em;
+    }
+
+    #myServices {
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-color: rgba(0, 0, 0, 0);
+        background-image: url("../../images/background-1.png");
+        background-origin: padding-box;
+        background-position: center top, center center, center bottom;
+        background-repeat: repeat;
+        background-size: auto auto;
+        border-bottom: 1px solid #dddddd;
+        box-shadow: -1px 2px 5px 0 rgba(0, 0, 0, 0.43);
+        height: 950px;
+        padding: 70px 0;
+    }
+
+    .website-creation p{
+        font-size: 1.8em;
+        margin-bottom: 0px;
+        padding-bottom: 80px;
+    }
+
+    .technologies-content {
+        color: #000;
+        font-size: 1em;
+        padding-left: 0;
+        position: relative;
+        text-align: center;
+        top: 0;
+        transition: all 0.8s ease 0s;
+        visibility: visible;
+    }
+
+
+    .technologies-group .technologies-item {
+        display: inline-block;
+        font-size: 13px;
+        margin-bottom: 30px;
+        margin-left: 50px;
+        text-align: center;
+        vertical-align: top;
+        width: 20%;
+    }
+
+    .technologies-group .technologies-progress {
+        background-color: #ffffff;
+        border-radius: 100%;
+        height: 130px;
+        margin: 0 auto;
+        position: relative;
+        width: 130px;
+    }
+
+    .technologies-group .technologies-item .money-item,.technologies-group .technologies-item .check-item, .technologies-group .technologies-item .ruler-icons,.technologies-group .technologies-item .computer-icon {
+        padding-top: 35px;
+    }
+
+    .technologies-group .technologies-item .brain-icon {
+        padding-top: 25px;
+    }
+
+    .technologies-group .technologies-item .money-item img, .technologies-group .technologies-item .check-item img, .technologies-group .technologies-item .ruler-icons img, .technologies-group .technologies-item .computer-icon img, .technologies-group .technologies-item .brain-icon img {
+       width: 60px;
+    }
+
+    .about-detail img {
+        margin-bottom: 30px;
+        margin-left: 70px;
+        margin-top: 28px;
+        vertical-align: bottom;
+    }
+
+}
+
+@media only screen and (max-width : 480px){
+    .about-detail img{
+        margin-left: 0px;
+    }
+
+    .navbar-nav {
+        margin:0px;
+    }
+
+    .navbar-brand {
+        float: left;
+        font-size: 18px;
+        height: auto;
+        line-height: 20px;
+        padding-top: 10px;
+    }
+
+    .navbar-nav > li {
+        float: none;
+        padding: 0px;
+        display: block;
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .navbar-nav > li > a {
+        text-transform: uppercase;
+        font-size: 2em;
+        color: #000;
+    }
+
+    ul.navbar-nav{
+        background-color: #ffffff;
+        box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.43);
+        border: 1px solid #9d9d9d;
+    }
+
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        border: medium none #101010;
+    }
+
+    .container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header {
+        margin-left: 0px;
+        margin-right: 0px;
+        overflow: hidden;
+    }
+
+    .technologies-group .technologies-item{
+        display: inline;
+    }
+    .website-creation .icon-technologies-green, .website-creation .icon-technologies-red{
+        text-align: center;
+    }
+
+    .website-creation h4{
+        margin-top: 30px;
+    }
+    .myservice-item{
+        margin-top: 50px;
+    }
+
+    #myServices{
+        padding: 70px 0px;
+        background: url("../../images/background-1.png") top center;
+        background-position: top center, center center, center bottom;
+        background: cover cover;
+        height: auto;
+        border-bottom: 1px solid #dddddd;
+        box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.43);
+    }
+
+    .text-content{
+        text-align: center;
+        width: 260px;
+    }
+    .container{
+        width: 95%;
+    }
+    .about-detail img{
+        margin-bottom: 30px;
+    }
+    .content{
+        margin: auto 0;
+        padding: 0;
+    }
+
+    #hero-banner .content h1{
+        font-size: 4em;
+        font-weight: bold;
+        color: #000000;
+        padding-left:35px;
+        padding-top: 20px;
+    }
+
+    #hero-banner .content {
+        margin-left: 0px;
+        padding-top: 0px;
+        width: auto;
+    }
+
+    .connect-with-us h5{
+        padding-top: 30px;
+    }
+
+    #technologies h3.yellow-background{
+        font-size: 2em;
+
+    }
+
+    #technologies h3.yellow-background a{
+        text-decoration: underline;
+        color: #000000;
+        font-style: italic;
+    }
+
+    #technologies h3{
+        font-size: 2em;
+        margin-top: 20px;
+    }
+
+    .text-app {
+        padding-bottom: 0px;
+        padding-top: 0px;
+        line-height: 3.5em;
+    }
+    .technologies-content {
+        margin-bottom: 60px;
+    }
+
+    .website-creation p{
+        font-size: 2.4em;
+        margin-bottom: 0px;
+        padding-bottom: 80px;
+    }
+
+
+}
+@media only screen and (max-width : 320px){
+    .navbar-nav {
+        margin:0px;
+    }
+    .navbar-brand {
+        float: left;
+        font-size: 18px;
+        height: auto;
+        line-height: 20px;
+        padding-top: 10px;
+    }
+    #hero-banner .content h1{
+        font-size: 4em;
+        font-weight: bold;
+        color: #000000;
+        padding-left:28px;
+        padding-top: 20px;
+    }
+
+    #hero-banner .content {
+        margin-left: 0px;
+        padding-top: 0px;
+        width: auto;
+        padding-bottom: 30px;
+    }
+
+    #hero-banner .content p {
+        background-color: rgba(250, 250, 250, 0.5);
+        font-size: 2em;
+        margin-top: 20px;
+        padding: 25px;
+        text-align: justify;
+        word-wrap: normal;
+    }
+
+}

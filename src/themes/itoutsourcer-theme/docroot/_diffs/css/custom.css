@@ -1,0 +1,84 @@
+@import "compass";
+@import "mixins";
+
+@import url(icons.css);
+@import url(font-awesome.min.css);
+@import url(animate.css);
+@import url(animation.css);
+
+@import url(onepage-scroll.css);
+@import url(itoutsourcer.css);
+@import url(itoutsourcer_responsive.css);
+
+/* ---------- Base styles ---------- */
+
+.aui {
+	body{
+	
+	}
+	
+	#sign-in {
+		background: url(@theme_image_path@/common/key.png) no-repeat 3px 50%;
+		font-weight: bold;
+		padding: 5px 5px 5px 25px;
+		position: absolute;
+		right: 0;
+		top: -1.2em;
+	}
+	.portlet-login {
+	
+	}
+	#portlet_58 {
+	  margin: 2em 5em 0;
+	  overflow: hidden;
+	  box-shadow: none;
+	}
+	#portlet_58 .navigation {
+	  display: none;
+	}
+	#portlet_58 .btn {
+	}
+	#portlet_58 form,
+	#portlet_58 .button-holder {
+	  margin: 0;
+	}
+	#portlet_58 .portlet-body {
+	  background: white;
+	}
+	#portlet_58 .portlet-content {
+	  padding: 10px;
+	  background: white;
+	}
+	#portlet_58 .portlet-content .control-group input[type='text'],
+	#portlet_58 .portlet-content .control-group input[type='password'] {
+	  margin: 0;
+	}
+	#portlet_58 .portlet-topper {
+	  display: none;
+	}
+}
+
+#hrefFm{
+	margin: 0px;
+}
+.hide-accessible {
+   clip: rect(0, 0, 0, 0) !important;
+   position: absolute !important;
+    -webkit-transform: scale(0);
+   -webkit-transform-origin-x: 0px;
+   -webkit-transform-origin-y: 0px;
+    *position: fixed !important;
+    _position: absolute !important;
+}
+
+.aui-w100 {
+    width: 100%;
+}
+.aui-w50{
+	 width: 50%;
+}
+
+.text-center{
+	 text-align: center;
+}
+

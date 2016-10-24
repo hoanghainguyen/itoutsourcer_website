@@ -1,0 +1,174 @@
+@import "compass";
+@import "mixins";
+
+@include respond-to(phone, tablet) {
+	.aui {
+		 body{
+		 	padding-left: 0px;
+		 	padding-right: 0px;
+		 }
+		 
+		 .navbar-fixed-top{
+		 	margin-left : 0px;
+		 	margin-right : 0px;
+		 	margin-bottom: 0px;
+		 	
+		 	.navbar-inner{
+		 		padding :1% 3%!important;
+		 	}
+		 }
+		 
+		 #header{
+		 	.brand img {
+		 		width: 130px;
+		 	}
+		 }
+		 #navigation {
+		 	float: none;
+			display: none;
+			@include transition(all .5s ease);
+			&.open {
+				display: block;
+				
+				.navbar-inner {
+					@include border-radius(3px);
+					padding: 10px;
+					.nav-collapse {
+						height: auto;
+						overflow: visible;
+						display: block;
+					}
+					
+					.nav > li a {
+						font-size: 1em;
+						color: rgba(0,0,0,.4);
+						padding: 9px 15px;
+						text-shadow: none;
+						
+						&:hover, &:focus {
+							background: #00caff;
+							outline: none;
+						}
+					}
+				}
+		 	}
+		 	.nav {
+				margin: 0;
+			}
+		 }
+		 
+		 .content-section{
+			 	.section-header{
+					h1 {
+					 	 font-size: 2em;
+   						 margin: 8% 0 0;
+					}
+				}
+				
+				p{
+					font-size: 13px;
+				}
+				.section-content{
+				 	height: auto;
+    				top: 15%;
+				}
+				
+				.container{
+				  	padding-left: 15px;
+    				padding-right: 15px;
+    				font-size: 13px;
+				}
+				
+				#section-about{
+					img {
+						display:none;
+					}
+				}
+				#section-services {
+					.service-item {
+						 header{
+						 	font-size: 1em;
+						}
+				    }
+				    
+				    .service-icon{
+				    	background-size: 120px;
+			    		height: 120px;
+			    		
+			    		font-size: 75px;
+			    		line-height: 120px;
+			    		margin: 5px;
+			   			width: 120px;
+				    }
+				    
+				    .icon-back{
+					     height: 15px;
+	                    width: 15px;
+				    }
+				    
+				    .services-detail-top{
+				    	height: 15%;
+				    	
+				    	header h1{
+		    			 	color: #e74c3c;
+		    			 	font-size:1.4em;
+		    			 	margin-top: 7%;
+		    			}
+				    }
+				    
+				    .services-detail-bottom{
+				    	height: 85%;
+				    	.copy{
+					        height: 80%;
+					        bottom: 20%;
+					        overflow-y: scroll;
+					        font-size: .7em
+					    }
+				    }
+				    #bullets {
+				        display: none !important
+				    }
+				}
+			   
+				#section-references{
+					 /* background-image: url(../images/references-bg-mobile.jpg); */
+					  p{
+					  }
+				}
+		 }
+	}
+}
+@include respond-to(phone){
+	.aui{
+		.content-section{
+		
+			#section-services {
+				.service-item {
+					 width: calc(47%);
+			    }
+			    
+			     .service-icon{
+			    	background-size: 60px;
+			   		height: 60px;
+			   		
+			   		font-size: 35px;
+		    		line-height: 60px;
+		    		margin: 5px;
+		   			width: 60px;
+			    }
+			}
+		}
+	}
+}
+
+@media ( max-width : 700px) {
+	.aui {
+		.content-section{
+			.section-header{
+					h1 {
+					 	 font-size: 1.5em;
+					}
+				}
+		}
+	}
+}

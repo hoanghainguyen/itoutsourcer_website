@@ -1,0 +1,28 @@
+#set ($anchors = [])
+#set ($mapAnchors = {})
+<div class="$nav_css_class nav-collapse collapse pull-right  " id="navigation">
+	<ul aria-label="#language ("site-pages")" id="navCollapse" class="nav " role="menubar">
+		#foreach ($nav_item in $nav_items)
+				#set ($nav_item_attr_selected="")
+				#set ($nav_item_attr_has_popup="")
+				#set ($nav_item_caret="")
+				#set ($nav_item_css_class="lfr-nav-item")
+				#set ($nav_item_link_css_class="")
+
+			#if ($nav_item.isSelected())
+				#set ($nav_item_attr_selected="aria-selected='true'")
+				#set ($nav_item_css_class="$nav_item_css_class selected active")
+			#end
+
+			<li class="$nav_item_css_class" id="layout_$nav_item.getLayoutId()" $nav_item_attr_selected role="presentation">
+				<a aria-labelledby="layout_$nav_item.getLayoutId()" $nav_item_attr_has_popup class="$nav_item_link_css_class" href="$nav_item.getURL()" $nav_item.getTarget() role="menuitem">
+					<span>$nav_item.icon() $nav_item.getName() $nav_item_caret</span>
+				</a>
+			</li>
+			#set( $mapAnchors = $mapAnchors.put($velocityCount,  $nav_item.getURL() ) )
+		#end
+	</ul>
+</div>
+<script>
+	Liferay.Data.NAV_LIST_SELECTOR = '.navbar-inner .nav-collapse > ul';
+</script>
