@@ -1,0 +1,12 @@
+liferay version : liferay-portal-6.2-ce-ga3
+tomcat 7.0.42
+mysql 5
+
+
+Content of server.xml
+
+
+<Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxActive="100" maxIdle="30" maxWait="10000"
+    name="jdbc/LiferayPool" password="itoutsourcer.123" type="javax.sql.DataSource"
+    url="jdbc:mysql://localhost/itoutsourcer?useUnicode=true&amp;characterEncoding=UTF-8&amp;useFastDateParsing=false"
+    username="itoutsourcer"/>
